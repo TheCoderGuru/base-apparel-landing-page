@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Base Apparel coming soon page</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	</head>
 
-    <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <main>
-      <img class="logo" src="./images/logo.svg" alt="" />
-      <div class="container">
-        <div class="container__image">
-          <picture>
-            <source
-              srcset="images/hero-mobile.jpg"
-              media="(max-width: 600px)"
-            />
-            <img src="./images/hero-desktop.jpg" alt="" />
-          </picture>
-        </div>
-        <div class="container__grid">
-          <h1 class="container__title">
-            We're <span class="text-bold">coming soon</span>
-          </h1>
-          <p class="container__description">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <div class="input-flex">
-            <input type="email" name="email" id="" placeholder="Email Address" />
-            <img class="arrow" src="./images/icon-arrow.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+	<body>
+		<div class="container">
+			<header>
+				<img class="logo" src="./images/logo.svg" alt="logo" />
+			</header>
+			<section class="hero">
+				<img src="./images/hero-mobile.jpg" alt="hero-image" />
+			</section>
+			<main>
+				<div class="wrapper">
+					<h1 class="heading">
+						<span>We're</span> <br />coming<br />
+						soon
+					</h1>
+					<p class="lead">
+						Hello fellow shoppers! We're currently building our new fashion
+						store. Add your email below to stay up-to-date with announcements
+						and our launch deals.
+					</p>
+					<form action="" method="get" accept-charset="utf-8">
+						<input
+							type="text"
+							name="email"
+							id="email"
+							value=""
+							placeholder="Email Address"
+						/>
+						<div>
+							<img
+								id="error-icon"
+								src="./images/icon-error.svg"
+								alt="error-icon"
+							/>
+							<button class="btn" type="submit">
+								<img src="./images/icon-arrow.svg" alt="submit-arrow" />
+							</button>
+						</div>
+						<p id="error">Please provide a valid email</p>
+					</form>
+				</div>
+			</main>
+		</div>
+		<script src="script.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>
